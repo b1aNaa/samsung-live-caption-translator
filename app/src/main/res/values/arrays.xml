@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="engine_names">
+        <item>百度翻译 API（普通机翻）</item>
+        <item>Qwen-MT-Lite（专用翻译模型）</item>
+        <item>DeepSeek（通用大语言模型）</item>
+    </string-array>
+    <string-array name="engine_values">
+        <item>baidu</item>
+        <item>qwen</item>
+        <item>deepseek</item>
+    </string-array>
+</resources>

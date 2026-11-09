@@ -1,0 +1,24 @@
+# Build outputs
+*.apk
+*.aab
+/build
+/app/build
+.gradle
+.kotlin
+
+# Local machine config — contains SDK path & signing credentials, never commit
+local.properties
+
+# Signing material — distribute the repo, not your identity
+*.keystore
+*.jks
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+nul

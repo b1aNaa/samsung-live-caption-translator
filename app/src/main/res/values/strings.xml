@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">实时字幕-自动翻译</string>
+    <string name="a11y_desc">读取系统实时字幕显示的文本用于即时翻译，不收集不上传任何内容</string>
+
+    <!-- Main screen -->
+    <string name="status_running">● 运行中</string>
+    <string name="status_stopped">● 未运行</string>
+    <string name="a11y_on">无障碍服务：已开启 ✓</string>
+    <string name="a11y_off">无障碍服务：未开启</string>
+    <string name="btn_overlay">① 授予悬浮窗权限</string>
+    <string name="btn_a11y">② 开启无障碍服务</string>
+    <string name="btn_start">③ 开始翻译</string>
+    <string name="btn_stop">停止</string>
+    <string name="btn_config">⚙ 配置 API 和教程</string>
+    <string name="footer_info">工作原理：通过无障碍服务直接读取系统「实时字幕」的文字，无需截图、无需录屏授权。\n\n前置条件：手机自带「实时字幕」功能已开启。\n\n磁贴功能：下拉快捷面板 → 右上角编辑 → 把「实时字幕-自动翻译」磁贴拖上来，之后点一下即可开关翻译。\n\n无法授权无障碍？在桌面长按应用图标 → 进入应用信息页 → 点右上角菜单 → 选择「允许受限设置」，即可正常开启。</string>
+
+    <!-- Drawer -->
+    <string name="drawer_subtitle">设置与使用教程</string>
+    <string name="btn_lang">中 / EN</string>
+    <string name="section_engine">翻译引擎</string>
+    <string name="section_overlay">字幕与悬浮窗</string>
+    <string name="section_tutorial">使用教程</string>
+    <string name="label_last_lines">读取字幕末尾行数：%1$d</string>
+    <string name="label_font_size">译文字号</string>
+    <string name="label_bg_alpha">字幕背景不透明度</string>
+    <string name="cb_show_src">悬浮窗显示识别到的原文（排查用）</string>
+    <string name="hint_baidu_id">百度翻译 APPID</string>
+    <string name="hint_baidu_key">百度翻译密钥</string>
+
+    <string name="engine_desc_baidu">普通机翻：配置最简单、翻译最快速、效果一般，个人使用免费</string>
+    <string name="engine_desc_qwen">专用翻译模型：综合体验最好，免费额度用完后需付费（¥0.6 / ¥1.6 每百万字符）</string>
+    <string name="engine_desc_deepseek">通用大语言模型：理解力最强，但较慢</string>
+    <string name="key_hint_qwen">阿里云百炼 API Key（bailian.console.aliyun.com → API-KEY）</string>
+    <string name="key_hint_deepseek">DeepSeek API Key（platform.deepseek.com 注册获取）</string>
+
+    <string name="tutorial_text">【第 1 步：选引擎、填密钥】（就在本页上方）\n\n• 百度翻译 API（默认，最快）\n注册：https://fanyi-api.baidu.com\n开发者中心 → 通用文本翻译 → 领取 APPID 和密钥。个人使用免费。\n\n• Qwen-MT-Lite（专用翻译模型，综合体验最好）\n注册：https://bailian.console.aliyun.com\n右上角/API-KEY 页面创建密钥。新用户有免费额度，用完后付费（¥0.6 / ¥1.6 每百万字符）。\n\n• DeepSeek（通用大语言模型，理解力强但较慢）\n注册：https://platform.deepseek.com\nAPI keys 页面创建密钥。按 token 计费，需先充值。\n\n【第 2 步：两个系统开关】\n• 悬浮窗权限：主界面点①，找到本应用打开\n• 无障碍服务：主界面点②，在「已安装的服务」里找到「实时字幕-自动翻译」打开\n• 若开关被禁用（受限设置）：设置 → 应用程序 → 本应用 → 右上角 ⋮ → 允许受限设置，再回来打开\n\n【第 3 步：开实时字幕】\n播放视频时按一下音量键，在音量面板下方点「实时字幕」图标；找不到就去 设置 → 辅助功能 → 听觉增强 → 实时字幕。开启后系统会识别视频声音并显示外文字幕。\n\n【第 4 步：开始】\n回到主界面点「③ 开始翻译」，悬浮窗立即出现。看片时把快捷面板的磁贴加上，一点即开。\n\n【常见问题】\nQ：悬浮窗出现但一直没译文？\nA：确认系统实时字幕正在显示外文字幕；调大「读取字幕末尾行数」。\n\nQ：译文显示密钥错误？\nA：密钥没填或填错，回此页检查；DeepSeek 还需账户有余额。\n\nQ：Netflix/Disney+ 能用吗？\nA：能。本应用读的是系统字幕文字而非画面，不受 DRM 截屏限制影响。\n\n版本：实时字幕-自动翻译 v1.8 · 开源可审计\n\n源码仓库（可自行审计、编译）：\nhttps://github.com/b1aNaa/samsung-live-caption-translator</string>
+
+    <!-- Toasts & service messages -->
+    <string name="toast_authorized">已授权</string>
+    <string name="toast_need_overlay">请先授予悬浮窗权限（第①步）</string>
+    <string name="toast_need_key">请先填写所选引擎的密钥</string>
+    <string name="toast_need_a11y">请先在无障碍设置中开启本应用（第②步）</string>
+    <string name="toast_started">已开启，确保系统实时字幕正在显示</string>
+    <string name="overlay_started">✓ 自动翻译已开启，等待实时字幕…</string>
+    <string name="err_translate_failed">翻译失败</string>
+
+    <!-- Translator errors -->
+    <string name="err_baidu_missing">请先在主界面填写百度翻译的 APPID 和密钥</string>
+    <string name="err_qwen_missing">请先填写阿里云百炼 API Key</string>
+    <string name="err_ds_missing">请先填写 DeepSeek API Key</string>
+    <string name="err_baidu_prefix">百度翻译错误 </string>
+    <string name="err_qwen_prefix">Qwen-MT 错误: </string>
+    <string name="err_ds_prefix">DeepSeek 错误: </string>
+</resources>

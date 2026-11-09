@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Live Caption Translator</string>
+    <string name="a11y_desc">Reads the text shown by the system Live Caption for instant translation. Nothing is collected or uploaded.</string>
+
+    <!-- Main screen -->
+    <string name="status_running">● Running</string>
+    <string name="status_stopped">● Stopped</string>
+    <string name="a11y_on">Accessibility service: enabled ✓</string>
+    <string name="a11y_off">Accessibility service: not enabled</string>
+    <string name="btn_overlay">① Grant overlay permission</string>
+    <string name="btn_a11y">② Enable accessibility service</string>
+    <string name="btn_start">③ Start translating</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_config">⚙ Configure API &amp; tutorial</string>
+    <string name="footer_info">How it works: reads the system Live Caption text via an accessibility service — no screenshots, no screen-recording permission.\n\nPrerequisite: your phone\'s built-in Live Caption is turned on.\n\nQuick tile: pull down Quick Settings → edit → drag the "Live Caption Translator" tile up, then tap once to toggle.\n\nCan\'t enable accessibility? Long-press the app icon on the home screen → App info → ⋮ menu → "Allow restricted settings", then try again.</string>
+
+    <!-- Drawer -->
+    <string name="drawer_subtitle">Settings &amp; tutorial</string>
+    <string name="btn_lang">中 / EN</string>
+    <string name="section_engine">Translation engine</string>
+    <string name="section_overlay">Caption &amp; overlay</string>
+    <string name="section_tutorial">Tutorial</string>
+    <string name="label_last_lines">Trailing caption lines to read: %1$d</string>
+    <string name="label_font_size">Translation font size</string>
+    <string name="label_bg_alpha">Caption background opacity</string>
+    <string name="cb_show_src">Show recognized source text in overlay (debug)</string>
+    <string name="hint_baidu_id">Baidu APPID</string>
+    <string name="hint_baidu_key">Baidu API key</string>
+
+    <string name="engine_desc_baidu">Classic machine translation: simplest setup, fastest, average quality, free for personal use</string>
+    <string name="engine_desc_qwen">Dedicated MT model: best overall experience, paid after free quota (¥0.6 / ¥1.6 per million chars)</string>
+    <string name="engine_desc_deepseek">General-purpose LLM: best comprehension, but slower</string>
+    <string name="key_hint_qwen">Alibaba Cloud Bailian API Key (bailian.console.aliyun.com → API-KEY)</string>
+    <string name="key_hint_deepseek">DeepSeek API Key (platform.deepseek.com)</string>
+
+    <string name="tutorial_text">【Step 1: pick an engine &amp; enter its key】 (at the top of this page)\n\n• Baidu Translate API (default, fastest)\nSign up: https://fanyi-api.baidu.com\nDeveloper console → text translation → get APPID &amp; key. Free for personal use.\n\n• Qwen-MT-Lite (dedicated MT model, best overall)\nSign up: https://bailian.console.aliyun.com\nCreate a key on the API-KEY page. Free quota for new users; paid afterwards (¥0.6 / ¥1.6 per million chars).\n\n• DeepSeek (general LLM, strongest comprehension but slower)\nSign up: https://platform.deepseek.com\nCreate a key on the API keys page. Billed per token, top-up required.\n\n【Step 2: two system switches】\n• Overlay permission: tap ① on the home screen and enable this app\n• Accessibility: tap ②, find "Live Caption Translator" under installed services and enable it\n• If the toggle is blocked (Restricted settings): Settings → Apps → this app → ⋮ menu → Allow restricted settings, then retry\n\n【Step 3: turn on Live Caption】\nWhile a video plays, press a volume key and tap the "Live Caption" icon below the volume panel; if not found, go to Settings → Accessibility → Hearing enhancements → Live Caption. The system then shows captions for the audio.\n\n【Step 4: start】\nBack on the home screen tap "③ Start translating" — the overlay appears immediately. Add the Quick Settings tile for one-tap toggling.\n\n【FAQ】\nQ: Overlay shows but never translates?\nA: Make sure system Live Caption is actually showing foreign subtitles; increase "Trailing caption lines to read".\n\nQ: Translation shows a key error?\nA: Key missing or wrong — recheck it here; DeepSeek also needs account balance.\n\nQ: Does it work with Netflix/Disney+?\nA: Yes. The app reads the caption TEXT, not the screen — DRM screenshot limits don\'t apply.\n\nVersion: Live Caption Translator v1.8 · open source &amp; auditable\n\nSource code (audit &amp; build yourself):\nhttps://github.com/b1aNaa/samsung-live-caption-translator</string>
+
+    <!-- Toasts & service messages -->
+    <string name="toast_authorized">Already granted</string>
+    <string name="toast_need_overlay">Please grant overlay permission first (step ①)</string>
+    <string name="toast_need_key">Please enter the API key for the selected engine</string>
+    <string name="toast_need_a11y">Please enable this app in accessibility settings (step ②)</string>
+    <string name="toast_started">Started — make sure Live Caption is showing</string>
+    <string name="overlay_started">✓ Auto-translate on, waiting for captions…</string>
+    <string name="err_translate_failed">Translation failed</string>
+
+    <!-- Translator errors -->
+    <string name="err_baidu_missing">Please enter your Baidu APPID and key on the main screen</string>
+    <string name="err_qwen_missing">Please enter your Alibaba Bailian API Key</string>
+    <string name="err_ds_missing">Please enter your DeepSeek API Key</string>
+    <string name="err_baidu_prefix">Baidu error </string>
+    <string name="err_qwen_prefix">Qwen-MT error: </string>
+    <string name="err_ds_prefix">DeepSeek error: </string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="engine_names">
+        <item>Baidu Translate API (machine translation)</item>
+        <item>Qwen-MT-Lite (dedicated MT model)</item>
+        <item>DeepSeek (general LLM)</item>
+    </string-array>
+</resources>
