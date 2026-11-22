@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Only visible for the instant before Compose draws; matches its background. -->
+    <style name="Theme.LiveSub" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+</resources>

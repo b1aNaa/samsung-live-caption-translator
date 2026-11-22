@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Live Caption Translator</string>
+    <string name="a11y_desc">Reads the text shown by the system Live Caption so it can be translated. Only that caption text is sent, and only to the translation service you choose.</string>
+
+    <!-- Overlay -->
+    <string name="overlay_waiting">Translation on — waiting for Live Caption…</string>
+
+    <!-- Errors -->
+    <string name="err_missing_key">No API key set for this engine</string>
+    <string name="err_auth">Invalid API key or credentials</string>
+    <string name="err_quota">Out of quota or balance</string>
+    <string name="err_rate_limit">Too many requests, slowing down</string>
+    <string name="err_network">Network unavailable</string>
+    <string name="err_timeout">Translation service timed out</string>
+    <string name="err_server">Translation service error</string>
+    <string name="err_bad_response">Unexpected response from translation service</string>
+    <string name="err_unknown">Translation failed</string>
+
+    <!-- Home -->
+    <string name="status_running">Translating</string>
+    <string name="status_stopped">Ready</string>
+    <string name="status_route">%1$s → %2$s</string>
+    <string name="setup_title">Setup</string>
+    <string name="setup_a11y_title">Accessibility service</string>
+    <string name="setup_a11y_desc">Lets the app read Live Caption text</string>
+    <string name="setup_a11y_done">Enabled</string>
+    <string name="setup_restricted_hint">Toggle greyed out? Sideloaded apps on Android 13+ need “Allow restricted settings” in App info → ⋮ first.</string>
+    <string name="setup_engine_title">Translation engine</string>
+    <string name="setup_engine_desc">Choose an engine and enter its API key</string>
+    <string name="tile_title">Quick Settings tile</string>
+    <string name="tile_desc">Toggle translation from the notification shade without opening the app.</string>
+    <string name="home_footer">Reads Live Caption text through accessibility — no screenshots or screen recording, and it works with DRM-protected apps. Caption text goes only to the translation service you choose.</string>
+
+    <!-- Actions -->
+    <string name="action_start">Start translating</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_enable">Enable</string>
+    <string name="action_configure">Set up</string>
+    <string name="action_add_tile">Add tile</string>
+    <string name="action_back">Back</string>
+    <string name="action_test">Test translation</string>
+    <string name="action_reset_position">Reset overlay position</string>
+    <string name="action_source">Source code on GitHub</string>
+    <string name="action_show">Show</string>
+    <string name="action_hide">Hide</string>
+
+    <!-- Toasts -->
+    <string name="toast_need_a11y">Enable the accessibility service first</string>
+    <string name="toast_need_key">Enter the API key for the selected engine first</string>
+    <string name="toast_tile_exists">The tile is already added</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="section_engine">Translation</string>
+    <string name="engine_baidu">Baidu Translate</string>
+    <string name="engine_qwen">Qwen-MT</string>
+    <string name="engine_deepseek">DeepSeek</string>
+    <string name="engine_baidu_desc">Classic machine translation: fastest and simplest, free for personal use (standard tier: 1 request/s)</string>
+    <string name="engine_qwen_desc">Dedicated translation model: best overall, free quota then pay-as-you-go</string>
+    <string name="engine_deepseek_desc">Large language model: uses context, better with slang and names; slower, needs balance</string>
+    <string name="engine_custom_desc">Any OpenAI-compatible API — OpenAI, other providers, or a local model</string>
+    <string name="label_target_lang">Translate into</string>
+    <string name="field_baidu_appid">Baidu APPID</string>
+    <string name="field_baidu_key">Baidu secret key</string>
+    <string name="field_api_key">API key</string>
+    <string name="field_model">Model</string>
+    <string name="field_base_url">Base URL</string>
+    <string name="field_qwen_intl">International endpoint</string>
+    <string name="field_qwen_intl_desc">Use dashscope-intl.aliyuncs.com (Alibaba Cloud international accounts)</string>
+    <string name="hint_baidu">Sign up at fanyi-api.baidu.com → Developer center → General text translation to get an APPID and secret key.</string>
+    <string name="hint_qwen">Create an API key at bailian.console.aliyun.com. Default model is qwen-mt-lite; qwen-mt-turbo or qwen-mt-plus also work.</string>
+    <string name="hint_deepseek">Create a key on the API keys page at platform.deepseek.com. The account needs a balance.</string>
+    <string name="hint_custom">Enter the API base URL (up to /v1), key and model name. Requests use the OpenAI Chat Completions format.</string>
+    <string name="test_sample_en">This is a test caption — let\'s see how the translation looks.</string>
+    <string name="test_sample_zh">这是一条测试字幕，看看翻译效果怎么样。</string>
+
+    <string name="section_overlay">Subtitle overlay</string>
+    <string name="label_font_size">Text size</string>
+    <string name="label_bg_alpha">Background opacity</string>
+    <string name="label_display_count">Lines on screen</string>
+    <string name="label_show_source">Show original text</string>
+    <string name="label_show_source_desc">Display the recognized caption line above each translation</string>
+    <string name="preview_source">Captions appear here while you watch.</string>
+    <string name="preview_translation">Translations show up here.</string>
+
+    <string name="section_appearance">Appearance</string>
+    <string name="label_theme">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="label_language">Language</string>
+    <string name="language_system">System</string>
+
+    <!-- Help -->
+    <string name="help_title">Help</string>
+    <string name="help_how_title">How it works</string>
+    <string name="help_how_body">Your phone\'s built-in Live Caption turns speech in any video into captions, but it can\'t translate them. This app reads that caption text through an accessibility service and shows the translation in a floating subtitle you can drag anywhere — line for line: whenever Live Caption starts a new line, so does the translation.\n\nFinished lines are translated once and cached; the line still being spoken is refreshed as it grows, so subtitles keep up without flickering.</string>
+    <string name="help_steps_title">Getting started</string>
+    <string name="help_engines_title">Choosing an engine</string>
+    <string name="help_engines_body">• Baidu — fastest, free for personal use. Quality is fine for clear speech.\n\n• Qwen-MT — a model built for translation. The best balance of speed and quality.\n\n• DeepSeek / custom — general language models. They see the previous sentences as context, which helps with slang, pronouns and names, at the cost of some latency.</string>
+    <string name="help_faq_title">FAQ</string>
+    <string name="help_about_title">About</string>
+    <string name="help_about_body">Version %1$s · MIT licensed\nNo analytics, no crash reporting, no servers of our own. API keys stay on this device.</string>
+
+    <!-- v2 additions -->
+    <string name="home_options">Shortcuts</string>
+    <string name="home_recent">Recent captions</string>
+    <string name="home_recent_empty">Finished caption lines show up here while you watch. They stay in memory only.</string>
+    <string name="action_view_all">All</string>
+    <string name="label_auto_start">Auto-start</string>
+    <string name="label_auto_start_desc">Start translating as soon as Live Caption shows text</string>
+    <string name="hero_locked">Overlay locked</string>
+    <string name="hero_unlocked">Overlay movable</string>
+    <string name="hero_show_source">Original text</string>
+    <string name="stage_waiting">Waiting for Live Caption…
+Play a video with Live Caption on.</string>
+    <string name="stage_idle">Translations appear here and in a floating subtitle over any app.</string>
+    <string name="action_app_info">Open App info</string>
+    <string name="engine_custom_short">Custom</string>
+    <string name="section_credentials">%1$s setup</string>
+    <string name="test_ok">Works · %1$d ms</string>
+    <string name="test_failed">Test failed</string>
+    <string name="label_lock">Lock overlay</string>
+    <string name="label_lock_desc">Touches pass through to the video; the subtitle can\'t be dragged</string>
+    <string name="history_title">History</string>
+    <string name="history_empty_title">No captions yet</string>
+    <string name="history_empty_desc">Caption lines translated in this session appear here. Nothing is saved to storage.</string>
+    <string name="history_hint">Total: %1$d · tap one to copy</string>
+    <string name="history_clear_title">Clear history?</string>
+    <string name="history_clear_desc">All captions from this session will be removed.</string>
+    <string name="action_copy_all">Copy all</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="toast_copied">Copied</string>
+    <string-array name="help_steps">
+        <item>Open Settings, pick an engine, enter its key and tap “Test translation”.</item>
+        <item>Enable the accessibility service. If the toggle is greyed out (sideloaded apps on Android 13+): Settings → Apps → this app → ⋮ → Allow restricted settings, then try again.</item>
+        <item>Turn on Live Caption: while a video plays, press a volume key and tap the Live Caption icon under the slider — or Settings → Accessibility → Hearing enhancements → Live Caption.</item>
+        <item>Tap “Start translating”, or turn on Auto-start. Drag the subtitle anywhere; lock it when you want touches to reach the video.</item>
+    </string-array>
+    <string-array name="help_faq">
+        <item>The subtitle never shows a translation?</item>
+        <item>Make sure Live Caption is actually showing captions on screen, and that “Test translation” in Settings succeeds.</item>
+        <item>It says the key is invalid or out of balance?</item>
+        <item>Check the key in Settings. DeepSeek and most LLM providers need a positive account balance.</item>
+        <item>Does it work with Netflix / Disney+?</item>
+        <item>Yes. The app reads caption text, not the screen, so DRM screenshot blocking doesn\'t apply.</item>
+        <item>The subtitle blocks the video controls.</item>
+        <item>Lock the overlay (home screen or Settings) — touches then pass straight through to the app below.</item>
+        <item>Which phones are supported?</item>
+        <item>Android 11+ with Google Live Caption: Samsung Galaxy, Pixel and others. Phones without Google Live Caption (most China-market ROMs) won\'t work.</item>
+    </string-array>
+    <string name="home_eyebrow">LIVE CAPTION · REAL-TIME TRANSLATION</string>
+    <string name="home_help_desc">Setup steps, choosing an engine, FAQ</string>
+</resources>

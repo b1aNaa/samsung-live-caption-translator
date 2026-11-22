@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">实时字幕-自动翻译</string>
+    <string name="a11y_desc">读取系统「实时字幕」显示的文字用于翻译。只会把字幕文字发送给你选择的翻译服务，不收集其他任何内容。</string>
+
+    <!-- Overlay -->
+    <string name="overlay_waiting">翻译已开启，等待实时字幕…</string>
+
+    <!-- Errors -->
+    <string name="err_missing_key">当前引擎尚未填写密钥</string>
+    <string name="err_auth">密钥无效或鉴权失败</string>
+    <string name="err_quota">额度或余额不足</string>
+    <string name="err_rate_limit">请求过于频繁，正在降速</string>
+    <string name="err_network">网络不可用</string>
+    <string name="err_timeout">翻译服务响应超时</string>
+    <string name="err_server">翻译服务出错</string>
+    <string name="err_bad_response">翻译服务返回了无法识别的内容</string>
+    <string name="err_unknown">翻译失败</string>
+
+    <!-- Home -->
+    <string name="status_running">正在翻译</string>
+    <string name="status_stopped">准备就绪</string>
+    <string name="status_route">%1$s → %2$s</string>
+    <string name="setup_title">准备工作</string>
+    <string name="setup_a11y_title">无障碍服务</string>
+    <string name="setup_a11y_desc">用于读取实时字幕的文字</string>
+    <string name="setup_a11y_done">已开启</string>
+    <string name="setup_restricted_hint">开关是灰色的？Android 13+ 侧载安装的应用需要先在 应用信息 → ⋮ 里「允许受限设置」。</string>
+    <string name="setup_engine_title">翻译引擎</string>
+    <string name="setup_engine_desc">选择引擎并填写密钥</string>
+    <string name="tile_title">快捷磁贴</string>
+    <string name="tile_desc">在下拉快捷面板里一键开关翻译，不用打开应用。</string>
+    <string name="home_footer">通过无障碍服务读取实时字幕的文字：不截图、不录屏，DRM 保护的应用也能用。字幕文字只会发送给你选择的翻译服务。</string>
+
+    <!-- Actions -->
+    <string name="action_start">开始翻译</string>
+    <string name="action_stop">停止</string>
+    <string name="action_enable">去开启</string>
+    <string name="action_configure">去配置</string>
+    <string name="action_add_tile">添加磁贴</string>
+    <string name="action_back">返回</string>
+    <string name="action_test">测试翻译</string>
+    <string name="action_reset_position">重置悬浮窗位置</string>
+    <string name="action_source">GitHub 源码</string>
+    <string name="action_show">显示</string>
+    <string name="action_hide">隐藏</string>
+
+    <!-- Toasts -->
+    <string name="toast_need_a11y">请先开启无障碍服务</string>
+    <string name="toast_need_key">请先填写所选引擎的密钥</string>
+    <string name="toast_tile_exists">磁贴已经添加过了</string>
+
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="section_engine">翻译</string>
+    <string name="engine_baidu">百度翻译</string>
+    <string name="engine_qwen">Qwen-MT</string>
+    <string name="engine_deepseek">DeepSeek</string>
+    <string name="engine_baidu_desc">普通机翻：最快、配置最简单，个人使用免费（标准版限 1 次/秒）</string>
+    <string name="engine_qwen_desc">专用翻译模型：综合体验最好，有免费额度，之后按量付费</string>
+    <string name="engine_deepseek_desc">大语言模型：结合上下文，口语和人名更准；稍慢，需账户余额</string>
+    <string name="engine_custom_desc">任意 OpenAI 兼容接口：OpenAI、其他服务商或本地模型</string>
+    <string name="label_target_lang">翻译成</string>
+    <string name="field_baidu_appid">百度 APPID</string>
+    <string name="field_baidu_key">百度密钥</string>
+    <string name="field_api_key">API Key</string>
+    <string name="field_model">模型</string>
+    <string name="field_base_url">接口地址</string>
+    <string name="field_qwen_intl">国际站</string>
+    <string name="field_qwen_intl_desc">使用 dashscope-intl.aliyuncs.com（阿里云国际版账号）</string>
+    <string name="hint_baidu">在 fanyi-api.baidu.com 注册 → 开发者中心 → 通用文本翻译，领取 APPID 和密钥。</string>
+    <string name="hint_qwen">在 bailian.console.aliyun.com 创建 API Key。默认模型 qwen-mt-lite，也可以改成 qwen-mt-turbo 或 qwen-mt-plus。</string>
+    <string name="hint_deepseek">在 platform.deepseek.com 的 API keys 页面创建密钥，账户需有余额。</string>
+    <string name="hint_custom">填写接口地址（写到 /v1 为止）、密钥和模型名，请求格式为 OpenAI Chat Completions。</string>
+    <string name="test_sample_en">This is a test caption — let\'s see how the translation looks.</string>
+    <string name="test_sample_zh">这是一条测试字幕，看看翻译效果怎么样。</string>
+
+    <string name="section_overlay">字幕悬浮窗</string>
+    <string name="label_font_size">字号</string>
+    <string name="label_bg_alpha">背景不透明度</string>
+    <string name="label_display_count">同屏行数</string>
+    <string name="label_show_source">显示原文</string>
+    <string name="label_show_source_desc">在每行译文上方显示识别到的字幕原文</string>
+    <string name="preview_source">Captions appear here while you watch.</string>
+    <string name="preview_translation">看视频时，译文会显示在这里。</string>
+
+    <string name="section_appearance">外观</string>
+    <string name="label_theme">主题</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="label_language">界面语言</string>
+    <string name="language_system">跟随系统</string>
+
+    <!-- Help -->
+    <string name="help_title">使用帮助</string>
+    <string name="help_how_title">工作原理</string>
+    <string name="help_how_body">手机自带的「实时字幕」能把视频里的语音识别成字幕，但不会翻译。本应用通过无障碍服务读取这些字幕文字并翻译，显示在可以随意拖动的悬浮字幕上，而且逐行对应：实时字幕在哪里换行，译文就在哪里换行。\n\n已经结束的行只翻译一次并缓存；正在说的那一行会随着识别结果更新，字幕能跟上语速，也不会来回闪。</string>
+    <string name="help_steps_title">开始使用</string>
+    <string name="help_engines_title">怎么选引擎</string>
+    <string name="help_engines_body">• 百度翻译：最快，个人使用免费，吐字清楚的内容效果不错。\n\n• Qwen-MT：专门的翻译模型，速度和质量最均衡。\n\n• DeepSeek / 自定义：通用大语言模型，会参考前几句作为上下文，口语、代词和人名更准确，但延迟稍高。</string>
+    <string name="help_faq_title">常见问题</string>
+    <string name="help_about_title">关于</string>
+    <string name="help_about_body">版本 %1$s · MIT 开源\n无统计、无崩溃上报、无自建服务器，密钥只保存在本机。</string>
+
+    <!-- v2 additions -->
+    <string name="home_options">快捷功能</string>
+    <string name="home_recent">最近字幕</string>
+    <string name="home_recent_empty">看视频时，翻译完成的字幕行会出现在这里，只保存在内存中。</string>
+    <string name="action_view_all">全部</string>
+    <string name="label_auto_start">自动开始</string>
+    <string name="label_auto_start_desc">检测到实时字幕出现时自动开始翻译</string>
+    <string name="hero_locked">悬浮窗已锁定</string>
+    <string name="hero_unlocked">悬浮窗可拖动</string>
+    <string name="hero_show_source">显示原文</string>
+    <string name="stage_waiting">等待实时字幕…
+打开实时字幕并播放视频即可。</string>
+    <string name="stage_idle">译文会显示在这里，也会以悬浮字幕的形式显示在任意应用上方。</string>
+    <string name="action_app_info">打开应用信息</string>
+    <string name="engine_custom_short">自定义</string>
+    <string name="section_credentials">%1$s 配置</string>
+    <string name="test_ok">可用 · 耗时 %1$d ms</string>
+    <string name="test_failed">测试失败</string>
+    <string name="label_lock">锁定悬浮窗</string>
+    <string name="label_lock_desc">点击会穿透到下方的视频，字幕无法拖动</string>
+    <string name="history_title">字幕记录</string>
+    <string name="history_empty_title">还没有字幕</string>
+    <string name="history_empty_desc">本次使用中翻译过的字幕行会显示在这里，不会写入存储。</string>
+    <string name="history_hint">共 %1$d 行 · 点按可复制</string>
+    <string name="history_clear_title">清空记录？</string>
+    <string name="history_clear_desc">将移除本次使用中的全部字幕记录。</string>
+    <string name="action_copy_all">全部复制</string>
+    <string name="action_clear">清空</string>
+    <string name="action_cancel">取消</string>
+    <string name="toast_copied">已复制</string>
+    <string-array name="help_steps">
+        <item>打开设置，选择引擎并填写密钥，点「测试翻译」确认可用。</item>
+        <item>开启无障碍服务。如果开关是灰色的（Android 13+ 侧载安装）：设置 → 应用程序 → 本应用 → 右上角 ⋮ → 允许受限设置，然后再开启。</item>
+        <item>打开实时字幕：播放视频时按一下音量键，点音量条下方的「实时字幕」图标；也可以在 设置 → 辅助功能 → 听觉增强 → 实时字幕 里打开。</item>
+        <item>点「开始翻译」，或者打开「自动开始」。悬浮字幕可以拖到任意位置；想点视频控件时，把悬浮窗锁定即可。</item>
+    </string-array>
+    <string-array name="help_faq">
+        <item>悬浮窗一直没有译文？</item>
+        <item>确认屏幕上确实显示着实时字幕，并在设置里点「测试翻译」确认引擎可用。</item>
+        <item>提示密钥无效或余额不足？</item>
+        <item>到设置里检查密钥。DeepSeek 等大模型服务需要账户有余额。</item>
+        <item>Netflix / Disney+ 能用吗？</item>
+        <item>能。本应用读取的是字幕文字而不是画面，不受 DRM 防截屏影响。</item>
+        <item>悬浮字幕挡住了视频按钮？</item>
+        <item>在首页或设置里锁定悬浮窗，点击就会直接穿透到下方的应用。</item>
+        <item>支持哪些手机？</item>
+        <item>Android 11 及以上、带 Google 实时字幕的手机：三星 Galaxy、Pixel 等。没有 Google 实时字幕的手机（大部分国行 ROM）无法使用。</item>
+    </string-array>
+    <string name="home_eyebrow">实时字幕 · 同步翻译</string>
+    <string name="home_help_desc">开启步骤、引擎选择与常见问题</string>
+</resources>
